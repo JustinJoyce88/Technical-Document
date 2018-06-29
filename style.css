@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  line-height: 150%;
+  background-attachment: fixed;
+}
+
+/* Main Content */
+
+
+main {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  width: 80%;
+  background: #d1ccc0;
+  padding: 1em;
+}
+
+header {
+  font-weight: 700;
+  font-size: 1.5vw;
+}
+
+header:first-child {
+  margin-top: 1em; 
+}
+
+article {
+  margin: 1em;
+}
+
+ul {
+  margin-left: 3em;
+  font-size: .8vw;
+}
+
+li {
+  padding: .2em .2em .2em;
+}
+
+p {
+  margin: .5em;
+  font-size: .9vw;
+}
+
+.code-block { 
+  display: flex;
+  padding: 1em;
+  white-space: pre;
+  font-size: .7vw;
+  background: #aaa69d;
+}
+
+/* NAV BAR */
+
+nav {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  height: 100vh;
+  background: #84817a;
+}
+
+nav > header {
+  margin: 2em;
+  font-size: 1.5vw;
+}
+
+nav > a {
+  margin: .5em;
+  padding-left: 3em; 
+  font-size: 1vw;
+}
+
+@media screen and (max-width: 1200px){
+  nav {
+    width: 100%;
+    height: 150px;
+    align-items: center;
+    overflow-y: auto;
+  }
+
+  nav > header {
+    margin: 0em;
+    font-size: 1.2em;
+  }
+
+  nav > a {
+    display: flex;
+    flex-direction: row;
+    margin: 1em;
+    padding-left: 0em; 
+    font-size: 1em;
+  }
+
+  main {
+    width: 100%;
+  }
+}
